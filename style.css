@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lato:wght@300&display=swap');
+
+:root {
+    --primary-color: #047aed;
+}
+
+*{
+    box-sizing:"border-box";
+    padding: 0;
+    margin: 0;
+}
+
+body {
+font-family: 'Lato', sans-serif;
+line-height: 1.6;
+color: #333;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px, 0;
+}
+
+p{
+    margin:10px, 0;
+}
+
+img {
+    width: 10%;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--primary-color);
+    height: 70px;
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    padding: 10px;
+    margin: 0 5px;
+    color: #fff;
+}
+
+.navbar-a:hover {
+    border-bottom: 2px solid white;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+/* Showcase */
+.showcase {
+    background-color: var(--primary-color);
+    color: white;
+    height: 400px;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+
+.showcase .grid {
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index:100;
+    justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+    margin: 30px 0;
+}
+.showcase-form input[type='text'], 
+.showcase-form input[type='email'], { 
+    font-size: 16px;
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+}
+
+.showcase-form input:focus {
+    outline: none;
+}
+
+.showcase::before,
+.showcase::after {
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    background: white;
+    transform: skewY(-2.5deg);
+}
+
+/* Utilities */
+
+.container {
+    max-width: 1100px;
+    padding: 0 40px;
+    margin: auto;
+    overflow: 0, auto;
+}
+
+.showcase
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color:white;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px #fff solid;
+    border-radius: 5px;
+    color:white;
+}
+
+.btn:hover {
+    transform: scale(.97);
+}
+
+.btn-outline:hover {
+    transform: scale(.97);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
