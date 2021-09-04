@@ -375,6 +375,8 @@ pre {
 @media (max-width: 300px) {
   .navbar {
     height: 110px;
+    flex-direction:row;
+    flex-shrink: initial;
   }
 
   .navbar .flex {
