@@ -112,7 +112,7 @@ img {
 .showcase-form input:focus {
     outline: none;
 }
-/*test*/
+
 .showcase::before,
 .showcase::after {
     height: 100px;
@@ -123,6 +123,15 @@ img {
     position: absolute;
     background: white;
     transform: skewY(-2.5deg);
+    -webkit-transform: skewY(-2.5deg);
+    -moz-transform: skewY(-2.5deg);
+    -ms-transform: skewY(-2.5deg);
+}
+
+/* Stats */
+
+.stats {
+    padding-top: 100px;
 }
 
 /* Utilities */
