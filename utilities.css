@@ -27,13 +27,15 @@
   .btn-outline {
     background-color: transparent;
     border-radius: 5px;
+    cursor: pointer;
+    background: var(--primary-color);
     padding: 10px 30px;
     border: 2px #fff solid;
     color: #fff;
   }
   
   .btn:hover {
-    transform: scale(0.98);
+    transform: scale(0.96);
   }
   
   /* Backgrounds & colored buttons */
